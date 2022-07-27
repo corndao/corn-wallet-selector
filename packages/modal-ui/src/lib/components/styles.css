@@ -144,12 +144,17 @@
   line-height: 35px;
 }
 
-.nws-modal-wrapper .modal .modal-header .close-button {
+.nws-modal-wrapper .modal .close-button {
+  position: absolute;
+  right: 4px;
+  top: 8px;
+
   border: 0;
   cursor: pointer;
-  height: 24px;
-  padding: 4px;
+  height: 20px;
   background-color: transparent;
+
+  border: 0px;
 }
 
 .nws-modal-wrapper .modal .modal-header .close-button:active {
@@ -168,7 +173,7 @@
 .nws-modal-wrapper .modal .modal-header h2 {
   color: var(--wallet-selector-heading-color, var(--heading-color));
   font-size: 22px;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -316,13 +321,13 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 .nws-modal-wrapper .modal .wallet-options-wrapper .options-list li {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 18px 20px;
   cursor: pointer;
   border-radius: 8px;
   border: 1px solid var(--wallet-selector-wallet-option-border-color, var(--wallet-option-border-color));

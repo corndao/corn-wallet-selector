@@ -92,9 +92,9 @@ export const Modal: React.FC<ModalProps> = ({
         visible ? "open" : ""
       }`}
     >
-      <CloseButton onClick={handleDismissClick} />
       <div className="modal-overlay" onClick={handleDismissClick} />
       <div className="modal">
+        <CloseButton onClick={handleDismissClick} />
         <div className="modal-wallet-image">
           <img src={WalletImage} alt="wallet icon" />
         </div>
