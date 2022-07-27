@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import type {
   WalletSelector,
   ModuleState,
@@ -26,7 +26,6 @@ export const WalletOptions: React.FC<WalletOptionsProps> = ({
   onConnecting,
   onConnected,
 }) => {
-  const [walletInfoVisible, setWalletInfoVisible] = useState(false);
   const [modules, setModules] = useState<Array<ModuleState>>([]);
 
   useEffect(() => {
