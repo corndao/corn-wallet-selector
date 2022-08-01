@@ -146,8 +146,8 @@
 
 .nws-modal-wrapper .modal .close-button {
   position: absolute;
-  right: 4px;
-  top: 8px;
+  right: 16px;
+  top: 16px;
 
   border: 0;
   cursor: pointer;
