@@ -172,8 +172,12 @@
 
 .nws-modal-wrapper .modal .modal-header h2 {
   color: var(--wallet-selector-heading-color, var(--heading-color));
+<<<<<<< HEAD
   font-size: 26px;
   font-weight: bold;
+=======
+  font-size: 22px;
+>>>>>>> b6b1e9a4542d1b3a4a1827604df7cc6b19429d4e
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -341,7 +345,10 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+<<<<<<< HEAD
   font-weight: bold;
+=======
+>>>>>>> b6b1e9a4542d1b3a4a1827604df7cc6b19429d4e
 }
 
 .nws-modal-wrapper .modal .wallet-options-wrapper .options-list li .wallet-content .wallet-img-box {
