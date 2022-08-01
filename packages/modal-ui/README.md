@@ -1,6 +1,6 @@
-# @near-wallet-selector/modal-ui
+# @corndao/wallet-selector-modal-ui
 
-This is the Modal UI package for NEAR Wallet Selector.
+This is the customized Modal UI package for NEAR Wallet Selector, used by Cornerstone UI.
 
 ## Installation and Usage
 
@@ -8,17 +8,17 @@ The easiest way to use this package is to install it from the NPM registry:
 
 ```bash
 # Using Yarn
-yarn add @near-wallet-selector/modal-ui
+yarn add @corndao/wallet-selector-modal-ui
 
 # Using NPM.
-npm install @near-wallet-selector/modal-ui
+npm install @corndao/wallet-selector-modal-ui
 ```
 
 Then use it in your dApp:
 
 ```ts
 import { setupWalletSelector } from "@near-wallet-selector/core";
-import { setupModal } from "@near-wallet-selector/modal-ui";
+import { setupModal } from "@corndao/wallet-selector-modal-ui";
 import { setupNearWallet } from "@near-wallet-selector/near-wallet";
 
 const selector = await setupWalletSelector({
@@ -48,14 +48,14 @@ Import modal css styles:
 
 ```css
 /* Add import in the main css file */
-@import "~@near-wallet-selector/modal-ui/styles.css";
+@import "~@corndao/wallet-selector-modal-ui/styles.css";
 ```
 
 ### React & Vue
 
 ```ts
 // Add import in the main component
-import "@near-wallet-selector/modal-ui/styles.css";
+import "@corndao/wallet-selector-modal-ui/styles.css";
 ```
 
 These are the available css variables:
