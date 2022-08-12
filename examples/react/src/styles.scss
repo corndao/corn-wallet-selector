@@ -109,7 +109,6 @@ button, input {
 }
 
 button {
-  position: relative;
   transition: top 50ms;
   &:hover, &:focus {
     top: -1px;
