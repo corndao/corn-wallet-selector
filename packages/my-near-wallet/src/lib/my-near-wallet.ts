@@ -36,7 +36,7 @@ const resolveWalletUrl = (network: Network, walletUrl?: string) => {
 
   switch (network.networkId) {
     case "mainnet":
-      return "https://mynearwallet.com";
+      return "https://app.mynearwallet.com";
     case "testnet":
       return "https://testnet.mynearwallet.com";
     default:
@@ -179,9 +179,6 @@ const MyNearWallet: WalletBehaviourFactory<
         receiverId: receiverId || contract.contractId,
         actions: actions.map((action) => createAction(action)),
         walletCallbackUrl: callbackUrl,
-      }).then(() => {
-        // Suppress response since transactions with deposits won't actually
-        // return FinalExecutionOutcome.
       });
     },
 
@@ -209,7 +206,7 @@ export function setupMyNearWallet({
       id: "my-near-wallet",
       type: "browser",
       metadata: {
-        name: "My NEAR Wallet",
+        name: "MyNearWallet",
         description: null,
         iconUrl,
         deprecated: false,
